@@ -12,28 +12,8 @@ public class WithoutString {
      * @return StringBuilder converted to String that has all requested chars removed
      */
     private static String WithoutString(String base, String remove) {
-        StringBuilder finalString = new StringBuilder();
 
-        int lengthHelper = remove.length() - 1;
-
-        int indexLimiter = base.length() - remove.length();
-
-        for (int i = 0; i <= indexLimiter; i++){
-            String currentSubstring = base.substring(i, i + remove.length());
-            if (!currentSubstring.equals(remove) && finalString.length() == 0) {
-                finalString.append(currentSubstring);
-            } else if (!currentSubstring.equals(remove)) {
-                finalString.append(currentSubstring.substring(lengthHelper));
-            } else {
-                try {
-                    finalString.delete(finalString.length() - lengthHelper, finalString.length());
-                } catch (StringIndexOutOfBoundsException e) {
-                    i += lengthHelper;
-                }
-
-            }
-        }
-
-        return finalString.toString();
+        return base.replaceAll(String.format("(?i)%s", remove), "");
     }
 }
+
