@@ -11,7 +11,7 @@ public class WithoutString {
      * @param remove A String that you want to remove from the input string
      * @return StringBuilder converted to String that has all requested chars removed
      */
-    private static String WithoutString(String base, String remove) {
+    public static String WithoutString(String base, String remove) {
 
         return base.replaceAll(String.format("(?i)%s", remove), "");
     }

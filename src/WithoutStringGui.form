@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WithoutStringGui">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="20" y="113" width="500" height="307"/>
+    </constraints>
+    <properties>
+      <background color="-14581232"/>
+    </properties>
+    <border type="none" title="WithoutString"/>
+    <children>
+      <component id="947a6" class="javax.swing.JButton" binding="helloButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Press Me!"/>
+        </properties>
+      </component>
+      <component id="4b9ba" class="javax.swing.JTextField" binding="baseTextField">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Enter base here"/>
+        </properties>
+      </component>
+      <component id="22665" class="javax.swing.JTextField" binding="removeTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Enter remove here"/>
+        </properties>
+      </component>
+      <component id="3285d" class="javax.swing.JLabel" binding="helloLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="4" hsize-policy="4" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="10"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Your answer will appear here"/>
+        </properties>
+      </component>
+      <component id="525cc" class="javax.swing.JLabel" binding="removeLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Remove"/>
+        </properties>
+      </component>
+      <component id="5cb1a" class="javax.swing.JLabel" binding="baseLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Base"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
