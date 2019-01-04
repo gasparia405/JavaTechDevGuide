@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class MaxSpanProblem {
@@ -7,8 +8,9 @@ public class MaxSpanProblem {
 
         int[] testArray = new int[10];
         for (int i = 0; i < testArray.length; i++) {
-            testArray[i] = r.nextInt();
+            testArray[i] = r.nextInt(5) + 1;
         }
+        System.out.println(Arrays.toString(testArray));
 
         long startTime = System.currentTimeMillis();
 
@@ -18,6 +20,7 @@ public class MaxSpanProblem {
 
         long stopTime = System.currentTimeMillis();
         long runTime = stopTime - startTime;
+        System.out.println(maxSpan(testArray));
         System.out.printf("Run time maxSpan: %d milliseconds%n", runTime);
 
     }
